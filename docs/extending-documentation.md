@@ -29,13 +29,13 @@ For step 1, we can use `@open-wc/demoing-storybook` version 2 or higher, which u
 
 Install it manually (and see the docs for configuring):
 
-```sh
+```bash
 npm i @open-wc/demoing-storybook --save-dev
 ```
 
 Or scaffold it with basic configuration by doing
 
-```sh
+```bash
 npm init @open-wc
 ```
 
@@ -70,7 +70,7 @@ To do this we make use of [Providence](https://lion-web-components.netlify.app/?
 
 So lets install it:
 
-```sh
+```bash
 npm i providence-analytics --save-dev
 ```
 
@@ -109,7 +109,7 @@ This will analyse the JavaScript script and story content inside the markdown fi
 
 So all you need to do is to install this plugin:
 
-```sh
+```bash
 npm i babel-plugin-extend-docs --save-dev
 ```
 
