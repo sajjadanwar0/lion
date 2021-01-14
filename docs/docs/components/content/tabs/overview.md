@@ -3,8 +3,7 @@
 `lion-tabs` implements tabs view to allow users to quickly move between a small number of equally important views.
 
 ```js script
-import { LitElement } from 'lit-element';
-import { html } from 'lit-html';
+import { LitElement, html } from '@lion/core';
 import '@lion/tabs/lion-tabs.js';
 ```
 

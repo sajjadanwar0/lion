@@ -4,7 +4,7 @@
 Its purpose is to reduce the need to scroll when presenting multiple sections of content on a single page. Accordions often allow users to get the big picture before focusing on details.
 
 ```js script
-import { html } from 'lit-html';
+import { html } from '@lion/core';
 import '@lion/accordion/lion-accordion.js';
 ```
 

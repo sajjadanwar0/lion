@@ -1,11 +1,5 @@
 # Extending Lion Documentation
 
-```js script
-export default {
-  title: 'Guidelines/Extending documentation',
-};
-```
-
 If you extend [Lion](https://lion-web-components.netlify.app/) components, you don't only want to reuse the components, but you probably want to reuse the documentation (Storybook demos) as well. Wouldn't it be nice to just take it all from lion, but replace it with your own design system extension, so you don't have the extra maintenance of essentially copying the docs from `Lion` for your own design system implementation?
 
 In this blog we will explain how `Lion` supports this use case, and allows you to extend not just the components, but also the documentation.

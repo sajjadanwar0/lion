@@ -1,8 +1,7 @@
 # Components >> Content >> Collapsible >> Features ||20
 
 ```js script
-import { LitElement } from 'lit-element';
-import { html } from 'lit-html';
+import { LitElement, html } from '@lion/core';
 
 import '@lion/accordion/lion-accordion.js';
 import './src/custom-collapsible.js';
