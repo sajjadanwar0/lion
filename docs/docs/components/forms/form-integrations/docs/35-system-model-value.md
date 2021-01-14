@@ -1,4 +1,4 @@
-# Forms >> Form Integrations >> ModelValue || 35
+# Components >> Forms >> Form Integrations >> ModelValue || 35
 
 The modelValue or model can be considered as the ‘aorta’ of our form system.
 It is the single source of truth; not only for the current state

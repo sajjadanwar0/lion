@@ -1,10 +1,10 @@
-# Forms >> Input Email >> Overview ||10
+# Components >> Forms >> Input Email >> Overview ||10
 
 `lion-input-email` component is based on the generic text input field. Its purpose is to provide a way for users to fill in an email.
 
 ```js script
 import { html } from '@lion/core';
-import './lion-input-email.js';
+import '@lion/input-email/lion-input-email.js';
 ```
 
 ```js preview-story

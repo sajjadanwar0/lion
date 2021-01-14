@@ -1,4 +1,4 @@
-# Forms >> Form Integrations >> Forms in a dialog || 70
+# Components >> Forms >> Form Integrations >> Forms in a dialog || 70
 
 ```js script
 import { html } from '@lion/core';

@@ -1,3 +1,3 @@
-# Forms >> Form Integrations
+# Components >> Forms >> Form Integrations
 
 -> go to Overview

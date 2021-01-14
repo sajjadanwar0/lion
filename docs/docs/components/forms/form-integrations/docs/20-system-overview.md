@@ -1,4 +1,4 @@
-# Forms >> Form Integrations >> Form System Overview || 20
+# Components >> Forms >> Form Integrations >> Form System Overview || 20
 
 This page should be used as a starting point when first using the Form System.
 It provides an overview of its essential building blocks and provides links to detailed explanations

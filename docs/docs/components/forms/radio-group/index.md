@@ -1,3 +1,3 @@
-# Forms >> Radio Group
+# Components >> Forms >> Radio Group
 
 -> go to Overview

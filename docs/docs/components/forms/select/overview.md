@@ -1,4 +1,4 @@
-# Forms >> Select >> Overview ||10
+# Components >> Forms >> Select >> Overview ||10
 
 `lion-select` component is a wrapper around the native `select`.
 
@@ -9,7 +9,7 @@ usability for keyboard and screen reader users.
 
 ```js script
 import { html } from '@lion/core';
-import './lion-select.js';
+import '@lion/select/lion-select.js';
 ```
 
 ```js preview-story

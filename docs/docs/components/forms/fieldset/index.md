@@ -1,3 +1,3 @@
-# Forms >> Fieldset
+# Components >> Forms >> Fieldset
 
 -> go to Overview

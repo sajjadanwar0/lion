@@ -1,4 +1,4 @@
-# Forms >> Listbox >> Overview ||10
+# Components >> Forms >> Listbox >> Overview ||10
 
 A listbox widget presents a list of options and allows a user to select one or more of them.
 A listbox that allows a single option to be chosen is a single-select listbox; one that allows
@@ -8,8 +8,8 @@ multiple options to be selected is a multi-select listbox.
 
 ```js script
 import { html } from '@lion/core';
-import './lion-option.js';
-import './lion-listbox.js';
+import '@lion/listbox/lion-option.js';
+import '@lion/listbox/lion-listbox.js';
 ```
 
 ```js preview-story

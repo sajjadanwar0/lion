@@ -1,4 +1,4 @@
-# Forms >> Form Integrations >> Formatting and Parsing || 40
+# Components >> Forms >> Form Integrations >> Formatting and Parsing || 40
 
 ```js script
 import { html } from '@lion/core';

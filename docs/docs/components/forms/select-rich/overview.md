@@ -1,4 +1,4 @@
-# Forms >> Select Rich >> Overview ||10
+# Components >> Forms >> Select Rich >> Overview ||10
 
 `lion-select-rich` component is a 'rich' version of the native `<select>` element.
 It allows to provide fully customized options and a fully customized invoker button.
@@ -11,7 +11,7 @@ Its implementation is based on the following Design pattern:
 ```js script
 import { LitElement, html } from '@lion/core';
 import '@lion/listbox/lion-option.js';
-import './lion-select-rich.js';
+import '@lion/select-rich/lion-select-rich.js';
 ```
 
 ```js preview-story

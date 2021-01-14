@@ -1,4 +1,4 @@
-# Forms >> Form Integrations >> Interaction States || 45
+# Components >> Forms >> Form Integrations >> Interaction States || 45
 
 ```js script
 import { html } from '@lion/core';

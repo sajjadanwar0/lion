@@ -1,4 +1,4 @@
-# Forms >> Form Integrations >> Creating a custom field || 50
+# Components >> Forms >> Form Integrations >> Creating a custom field || 50
 
 ```js script
 import { html } from '@lion/core';

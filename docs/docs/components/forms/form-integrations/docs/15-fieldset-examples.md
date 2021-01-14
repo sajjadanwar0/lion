@@ -1,4 +1,4 @@
-# Forms >> Form Integrations >> Fieldset Examples || 15
+# Components >> Forms >> Form Integrations >> Fieldset Examples || 15
 
 ```js script
 import { html } from '@lion/core';

@@ -1,4 +1,4 @@
-# Forms >> Form Core >> Validate System ||23
+# Components >> Forms >> Form Core >> Validate System ||23
 
 ## When validation happens
 

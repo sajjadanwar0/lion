@@ -1,4 +1,4 @@
-# Forms >> Form Core >> Overview ||10
+# Components >> Forms >> Form Core >> Overview ||10
 
 `Form control`s are the most fundamental building block of the Forms. They are the basis of
 both `field`s and `fieldset`s, and the `form` itself.

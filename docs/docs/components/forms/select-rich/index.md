@@ -1,3 +1,3 @@
-# Forms >> Select Rich
+# Components >> Forms >> Select Rich
 
 -> go to Overview

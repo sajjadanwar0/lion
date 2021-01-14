@@ -1,3 +1,3 @@
-# Forms >> Input Date
+# Components >> Forms >> Input Date
 
 -> go to Overview

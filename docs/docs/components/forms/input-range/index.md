@@ -1,3 +1,3 @@
-# Forms >> Input Range
+# Components >> Forms >> Input Range
 
 -> go to Overview

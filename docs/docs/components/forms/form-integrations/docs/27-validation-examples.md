@@ -1,4 +1,4 @@
-# Forms >> Form Integrations >> Required Validator || 27
+# Components >> Forms >> Form Integrations >> Required Validator || 27
 
 The required validator can be put onto every form field element and will make sure that element is
 not empty.

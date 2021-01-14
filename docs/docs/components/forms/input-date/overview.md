@@ -1,4 +1,4 @@
-# Forms >> Input Date >> Overview ||10
+# Components >> Forms >> Input Date >> Overview ||10
 
 `lion-input-date` component is based on the generic text input field. Its purpose is to provide a way for users to fill in a date.
 
@@ -7,7 +7,7 @@ import { html } from '@lion/core';
 import { MinDate, MinMaxDate, MaxDate } from '@lion/form-core';
 import { loadDefaultFeedbackMessages } from '@lion/validate-messages';
 import { formatDate } from '@lion/localize';
-import './lion-input-date.js';
+import '@lion/input-date/lion-input-date.js';
 ```
 
 ```js preview-story

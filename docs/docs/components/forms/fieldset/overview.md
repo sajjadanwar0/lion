@@ -1,4 +1,4 @@
-# Forms >> Fieldset >> Overview ||10
+# Components >> Forms >> Fieldset >> Overview ||10
 
 `lion-fieldset` groups multiple input fields or other fieldsets together.
 

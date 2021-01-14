@@ -1,4 +1,4 @@
-# Forms >> Input Datepicker >> Overview ||10
+# Components >> Forms >> Input Datepicker >> Overview ||10
 
 `lion-input-datepicker` component is based on the date text input field. Its purpose is to provide a way for users to fill in a date with a datepicker.
 For an input field with a big range, such as `birthday-input`, a datepicker is not the best choice due to the high variance between possible inputs.
@@ -6,7 +6,7 @@ We encourage using the standard [lion-input-date](?path=/docs/form-component-inp
 
 ```js script
 import { html } from '@lion/core';
-import './lion-input-datepicker.js';
+import '@lion/input-datepicker/lion-input-datepicker.js';
 ```
 
 ```js preview-story

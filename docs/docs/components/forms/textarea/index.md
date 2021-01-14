@@ -1,3 +1,3 @@
-# Forms >> Textarea
+# Components >> Forms >> Textarea
 
 -> go to Overview

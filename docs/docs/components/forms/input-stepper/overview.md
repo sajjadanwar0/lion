@@ -1,10 +1,10 @@
-# Forms >> Input Stepper >> Overview ||10
+# Components >> Forms >> Input Stepper >> Overview ||10
 
 `lion-input-stepper` enables the user to increase and decrease a numeric value by predefined range. It is a combination of two buttons and a number input field with an optional slot `after` to suffix the extra information.
 
 ```js script
 import { html } from '@lion/core';
-import './lion-input-stepper.js';
+import '@lion/input-stepper/lion-input-stepper.js';
 ```
 
 ```js preview-story

@@ -1,3 +1,3 @@
-# Forms >> Input Iban
+# Components >> Forms >> Input Iban
 
 -> go to Overview

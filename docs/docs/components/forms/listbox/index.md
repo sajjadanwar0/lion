@@ -1,3 +1,3 @@
-# Forms >> Listbox
+# Components >> Forms >> Listbox
 
 -> go to Overview

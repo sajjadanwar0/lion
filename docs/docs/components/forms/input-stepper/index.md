@@ -1,3 +1,3 @@
-# Forms >> Input Stepper
+# Components >> Forms >> Input Stepper
 
 -> go to Overview

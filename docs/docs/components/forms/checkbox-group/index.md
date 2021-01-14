@@ -1,3 +1,3 @@
-# Forms >> Checkbox Group
+# Components >> Forms >> Checkbox Group
 
 -> go to Overview

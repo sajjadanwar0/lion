@@ -1,4 +1,4 @@
-# Forms >> Form Integrations >> Features overview ||25
+# Components >> Forms >> Form Integrations >> Features overview ||25
 
 This is a meta package to show interaction between various form elements.
 For usage and installation please see the appropriate packages.

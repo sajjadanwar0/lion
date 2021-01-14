@@ -1,9 +1,9 @@
-# Forms >> Form Core >> Validate ||22
+# Components >> Forms >> Form Core >> Validate ||22
 
 ```js script
 import { html } from '@lion/core';
 import { LionInput } from '@lion/input';
-import { Required, IsString, MaxLength, DefaultSuccess, Validator } from '../../index.js';
+import { Required, IsString, MaxLength, DefaultSuccess, Validator } from '@lion/form-core/index.js';
 import { loadDefaultFeedbackMessages } from '@lion/validate-messages';
 ```
 

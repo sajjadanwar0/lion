@@ -1,4 +1,4 @@
-# Forms >> Form Integrations >> Content inside fields || 60
+# Components >> Forms >> Form Integrations >> Content inside fields || 60
 
 ```js script
 import { html } from '@lion/core';

@@ -1,4 +1,4 @@
-# Forms >> Form Core >> Choice Group ||21
+# Components >> Forms >> Form Core >> Choice Group ||21
 
 `lion-choice-input` mixin is a fundamental building block of form controls which return a checked-state. It is used in:
 

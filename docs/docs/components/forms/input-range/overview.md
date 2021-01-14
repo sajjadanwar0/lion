@@ -1,11 +1,11 @@
-# Forms >> Input Range >> Overview ||10
+# Components >> Forms >> Input Range >> Overview ||10
 
 `lion-input-range` component is based on the native range input.
 Its purpose is to provide a way for users to select one value from a range of values.
 
 ```js script
 import { html } from '@lion/core';
-import './lion-input-range.js';
+import '@lion/input-range/lion-input-range.js';
 ```
 
 ```js preview-story

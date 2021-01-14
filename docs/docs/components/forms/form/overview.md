@@ -1,4 +1,4 @@
-# Forms >> Form >> Overview ||10
+# Components >> Forms >> Form >> Overview ||10
 
 `lion-form` is a webcomponent that enhances the functionality of the native `form` component.
 It is designed to interact with (instances of) the [form controls](?path=/docs/forms-system-overview--page).

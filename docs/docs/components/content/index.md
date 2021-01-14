@@ -1,1 +1,1 @@
-# Components >> Content ||20
+# Components >> Content || 10

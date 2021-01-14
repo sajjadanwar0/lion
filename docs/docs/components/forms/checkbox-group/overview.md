@@ -1,4 +1,4 @@
-# Forms >> Checkbox Group >> Overview ||10
+# Components >> Forms >> Checkbox Group >> Overview ||10
 
 `lion-checkbox-group` component enhances the functionality of the native `<input type="checkbox">` element.
 Its purpose is to provide a way for users to check **multiple** options amongst a set of choices, or to function as a single toggle.
@@ -7,8 +7,8 @@ Its purpose is to provide a way for users to check **multiple** options amongst 
 
 ```js script
 import { html } from '@lion/core';
-import './lion-checkbox-group.js';
-import './lion-checkbox.js';
+import '@lion/checkbox-group/lion-checkbox-group.js';
+import '@lion/checkbox-group/lion-checkbox.js';
 ```
 
 ```js story
