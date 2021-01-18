@@ -109,3 +109,5 @@ export class CustomCollapsible extends LionCollapsible {
     return this._contentHeight; // Expected height i.e. actual size once collapsed after animation
   }
 }
+
+customElements.define('custom-collapsible', CustomCollapsible);

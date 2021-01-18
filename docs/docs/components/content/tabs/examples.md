@@ -9,6 +9,8 @@ import './src/lea-tab-panel.js';
 
 ## Lea Tabs
 
+Learn how to create the `lea tabs` in our ["introducing lion" blogpost](./blog/introducing-lion/).
+
 ```js preview-story
 export const main = () => html`
   <lea-tabs>
