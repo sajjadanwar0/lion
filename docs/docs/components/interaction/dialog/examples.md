@@ -1,4 +1,4 @@
-# Components >> Interaction >> Dialog >> Docs ||20
+# Components >> Interaction >> Dialog >> Examples || 30
 
 `lion-dialog` is a component wrapping a modal dialog controller.
 Its purpose is to make it easy to use our Overlay System declaratively.
@@ -11,8 +11,6 @@ import demoStyle from './src/demo-dialog-style.js';
 import './src/styled-dialog-content.js';
 import './src/slots-dialog-content.js';
 ```
-
-## Example
 
 ```html
 <lion-dialog>
