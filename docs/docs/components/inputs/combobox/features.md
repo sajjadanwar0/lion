@@ -164,7 +164,7 @@ export const showAllOnEmpty = () => html`
 ### Changing defaults
 
 By default `selection-follows-focus` will be true (aligned with the
-wai-aria examples and the natve `<datalist>`).
+wai-aria examples and the native `<datalist>`).
 It is possible to disable this behavior, so the active/focused and checked/selected values
 will be kept track of independently.
 

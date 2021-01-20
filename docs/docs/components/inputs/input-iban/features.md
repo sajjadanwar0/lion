@@ -3,7 +3,7 @@
 ```js script
 import { html } from '@lion/core';
 import { loadDefaultFeedbackMessages } from '@lion/validate-messages';
-import { IsCountryIBAN, IsNotCountryIBAN } from './src/validators.js';
+import { IsCountryIBAN, IsNotCountryIBAN } from '@lion/input-iban/src/validators.js';
 import '@lion/input-iban/lion-input-iban.js';
 ```
 
@@ -70,9 +70,9 @@ export const blacklistedCountry = () => {
       label="IBAN"
     ></lion-input-iban>
     <br />
-    <small
-      >Demo instructions: Try <code>RO 89 RZBR 6997 3728 4864 5577</code> and watch it fail</small
-    >
+    <small>
+      Demo instructions: Try <code>RO 89 RZBR 6997 3728 4864 5577</code> and watch it fail
+    </small>
   `;
 };
 ```

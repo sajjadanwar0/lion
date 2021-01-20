@@ -7,17 +7,14 @@ Its purpose is to make it easy to use our Overlay System declaratively.
 import { html } from '@lion/core';
 import '@lion/dialog/lion-dialog.js';
 
-import demoStyle from './src/demo-dialog-style.js';
+import './src/applyDemoDialogStyles.js';
 ```
 
-```js story
+```js preview-story
 export const main = () => html`
-  <style>
-    ${demoStyle}
-  </style>
   <lion-dialog>
     <button slot="invoker">Click me to open dialog</button>
-    <div slot="content" class="dialog">
+    <div slot="content" class="demo-dialog--content">
       Hello! You can close this dialog here:
       <button
         class="close-button"

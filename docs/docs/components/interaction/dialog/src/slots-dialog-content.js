@@ -3,10 +3,8 @@ import { LitElement, html } from '@lion/core';
 class SlotsDialogContent extends LitElement {
   render() {
     return html`
-      <button>shadow button</button>
-      <slot name="actions">
-        <button>slot button</button>
-      </slot>
+      <p>This content contains an actions slot</p>
+      <slot name="actions"></slot>
     `;
   }
 }
