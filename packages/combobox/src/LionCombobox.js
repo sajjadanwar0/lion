@@ -389,8 +389,11 @@ export class LionCombobox extends OverlayMixin(LionListbox) {
    */
   // eslint-disable-next-line class-methods-use-this
   _showOverlayCondition({ lastKey }) {
+    if (!lastKey) {
+      return this.opened;
+    }
     const doNotOpenOn = ['Tab', 'Esc', 'Enter'];
-    return lastKey && !doNotOpenOn.includes(lastKey);
+    return !doNotOpenOn.includes(lastKey);
   }
 
   /**
@@ -805,13 +808,9 @@ export class LionCombobox extends OverlayMixin(LionListbox) {
    * @param {KeyboardEvent} [ev]
    */
   __requestShowOverlay(ev) {
-    if (
-      this._showOverlayCondition({
-        lastKey: ev && ev.key,
-        currentValue: this._inputNode.value,
-      })
-    ) {
-      this.opened = true;
-    }
+    this.opened = this._showOverlayCondition({
+      lastKey: ev && ev.key,
+      currentValue: this._inputNode.value,
+    });
   }
 }

@@ -11,6 +11,11 @@ import { LionCombobox } from '../src/LionCombobox.js';
  * @typedef {import('../types/SelectionDisplay').SelectionDisplay} SelectionDisplay
  */
 
+function mimicKeyPress(el, value) {
+  el._inputNode.dispatchEvent(new KeyboardEvent('keydown', { key: value }));
+  el._inputNode.dispatchEvent(new KeyboardEvent('keyup', { key: value }));
+}
+
 /**
  * @param {LionCombobox} el
  * @param {string} value
@@ -20,7 +25,7 @@ function mimicUserTyping(el, value) {
   // eslint-disable-next-line no-param-reassign
   el._inputNode.value = value;
   el._inputNode.dispatchEvent(new Event('input', { bubbles: true, composed: true }));
-  el._inputNode.dispatchEvent(new KeyboardEvent('keyup', { key: value }));
+  mimicKeyPress(el, value);
 }
 
 /**
