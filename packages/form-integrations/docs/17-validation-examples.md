@@ -695,3 +695,80 @@ export const FormValidationReset = () => html`
   </lion-form>
 `;
 ```
+
+## Backend validation
+
+```js preview-story
+export const backendValidation = () => {
+  // Mock
+  function fakeFetch(ms = 0, withError = false) {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(
+          new Response(
+            JSON.stringify({
+              message: withError ? 'Username is already taken' : '',
+            }),
+            { status: withError ? 400 : 200 },
+          ),
+        );
+      }, ms);
+    });
+  }
+
+  let backendValidationResolver;
+  let backendErrorMessage = 'Unknown Error';
+
+  const submitHandler = ev => {
+    if (ev.target.hasFeedbackFor.includes('error')) {
+      const firstFormElWithError = ev.target.formElements.find(el =>
+        el.hasFeedbackFor.includes('error'),
+      );
+      firstFormElWithError.focus();
+      return;
+    }
+    const formData = ev.target.serializedValue;
+    fakeFetch(100, formData.simulateError.length).then(async response => {
+      if (response.status !== 200) {
+        backendErrorMessage = (await response.json())?.message;
+        backendValidationResolver(true);
+      }
+      backendValidationResolver(false);
+    });
+  };
+
+  class BackendValidator extends Validator {
+    constructor(...args) {
+      super(...args);
+    }
+    static get validatorName() {
+      return 'backendValidator';
+    }
+    static get async() {
+      return true;
+    }
+    async execute() {
+      return await new Promise(resolve => (backendValidationResolver = resolve));
+    }
+    static getMessage({ fieldName, modelValue, params: param }) {
+      return backendErrorMessage;
+    }
+  }
+  return html`
+    <lion-form @submit=${submitHandler}>
+      <form>
+        <lion-input
+          label="username"
+          name="username"
+          .validators="${[new BackendValidator(''), new Required()]}"
+          .modelValue="${''}"
+        ></lion-input>
+        <lion-checkbox-group .mulipleChoice="${false}" name="simulateError">
+          <lion-checkbox label="Simulate backend error"></lion-checkbox>
+        </lion-checkbox-group>
+        <lion-button raised>Submit</lion-button>
+      </form>
+    </lion-form>
+  `;
+};
+```
