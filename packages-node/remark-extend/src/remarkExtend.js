@@ -80,7 +80,7 @@ function handleImportedFile({ startSelector, endSelector, userFunction, filePath
 
 // unified expect direct
 // eslint-disable-next-line consistent-return
-function remarkExtend({ rootDir = process.cwd(), sourceInfo } = {}) {
+function remarkExtend({ rootDir = process.cwd(), page } = {}) {
   return tree => {
     visit(tree, (node, index, parent) => {
       if (
@@ -103,8 +103,9 @@ function remarkExtend({ rootDir = process.cwd(), sourceInfo } = {}) {
         }
 
         if (!fs.existsSync(filePath)) {
+          const inputPath = page ? page.inputPath : 'no page.inputPath given';
           throw new Error(
-            `The import "${fileImport}" in "${sourceInfo}" does not exist. Resolved to "${filePath}".`,
+            `The import "${fileImport}" in "${inputPath}" does not exist. Resolved to "${filePath}".`,
           );
         }
         const importFileContent = fs.readFileSync(filePath);

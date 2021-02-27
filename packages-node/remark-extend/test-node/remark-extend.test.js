@@ -32,7 +32,7 @@ async function execute(input) {
   const parser = unified()
     //
     .use(markdown)
-    .use(remarkExtend, { rootDir: __dirname, sourceInfo: 'test-file.md' })
+    .use(remarkExtend, { rootDir: __dirname, page: { inputPath: 'test-file.md' } })
     .use(mdStringify);
   const result = await parser.process(input);
   return result.contents;
