@@ -718,29 +718,34 @@ export const backendValidation = () => {
 
   let backendValidationResolver;
   let backendErrorMessage = 'Unknown Error';
+  let isBackendCallPending = false;
 
   const submitHandler = ev => {
-    if (ev.target.hasFeedbackFor.includes('error')) {
-      const firstFormElWithError = ev.target.formElements.find(el =>
+    const lionForm = ev.target;
+    // TODO: this would be nice to expose as a method 'focusFirstFieldWithError' on the form
+    if (lionForm.hasFeedbackFor.includes('error')) {
+      const firstFormElWithError = lionForm.formElements.find(el =>
         el.hasFeedbackFor.includes('error'),
       );
       firstFormElWithError.focus();
       return;
     }
-    const formData = ev.target.serializedValue;
-    fakeFetch(100, formData.simulateError.length).then(async response => {
+    isBackendCallPending = true;
+    lionForm.formElements.username.validate(); // => backendValidationResolver will be assigned
+    // TODO: It would be better to do lionForm.validate() or smth;
+    // TODO: It would be nice if we had lionForm.getFormElement('username'); // returns closest matches in all nested groups
+    const formData = lionForm.serializedValue;
+    fakeFetch(2000, formData.simulateError.length).then(async response => {
       if (response.status !== 200) {
         backendErrorMessage = (await response.json())?.message;
         backendValidationResolver(true);
       }
       backendValidationResolver(false);
+      isBackendCallPending = false;
     });
   };
 
   class BackendValidator extends Validator {
-    constructor(...args) {
-      super(...args);
-    }
     static get validatorName() {
       return 'backendValidator';
     }
@@ -748,13 +753,21 @@ export const backendValidation = () => {
       return true;
     }
     async execute() {
-      return await new Promise(resolve => (backendValidationResolver = resolve));
+      if (isBackendCallPending) {
+        return await new Promise(resolve => (backendValidationResolver = resolve));
+      }
+      return false;
     }
     static getMessage({ fieldName, modelValue, params: param }) {
       return backendErrorMessage;
     }
   }
   return html`
+    <style>
+      lion-input[is-pending] {
+        opacity: 0.5;
+      }
+    </style>
     <lion-form @submit=${submitHandler}>
       <form>
         <lion-input
