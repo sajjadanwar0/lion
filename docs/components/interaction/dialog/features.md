@@ -1,4 +1,4 @@
-# Interaction >> Dialog >> Examples || 30
+# Interaction >> Dialog >> Features || 20
 
 `lion-dialog` is a component wrapping a modal dialog controller.
 Its purpose is to make it easy to use our Overlay System declaratively.

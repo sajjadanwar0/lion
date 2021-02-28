@@ -1,3 +1,3 @@
 # Lion Radio Group Features
 
-[=> See Source <=](../../../docs/docs/inputs/radio-group/features.md)
+[=> See Source <=](../../../docs/components/inputs/radio-group/features.md)

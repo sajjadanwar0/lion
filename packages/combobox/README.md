@@ -1,3 +1,3 @@
 # Lion Combobox
 
-[=> See Source <=](../../docs/components/input/combobox/overview.md)
+[=> See Source <=](../../docs/components/inputs/combobox/overview.md)

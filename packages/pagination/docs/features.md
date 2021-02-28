@@ -1,3 +1,3 @@
 # Lion Input Features
 
-[=> See Source <=](../../../docs/docs/navigation/pagination/features.md)
+[=> See Source <=](../../../docs/components/navigation/pagination/features.md)
