@@ -1,3 +1,3 @@
-# Select Rich
+# Lion Select Rich
 
-[=> See Source <=](../../docs/docs/components/inputs/select-rich/overview.md)
+[=> See Source <=](../../docs/components/inputs/select-rich/overview.md)

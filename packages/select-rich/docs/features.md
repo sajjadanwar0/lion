@@ -1,3 +1,3 @@
-# Select Rich Features
+# Lion Select Rich Features
 
-[=> See Source <=](../../../docs/docs/components/inputs/select-rich/features.md)
+[=> See Source <=](../../../docs/components/inputs/select-rich/features.md)

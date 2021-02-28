@@ -1,39 +1,28 @@
-[//]: # 'AUTO INSERT HEADER PREPUBLISH'
+# Tools >> Helpers >> Action Logger || 20
 
-# Storybook Action Logger
-
-A visual element to show action logs in Storybook demos `sb-action-logger`
+A visual element to show action logs in demos `sb-action-logger`
 
 ```js script
 import { html } from '@lion/core';
-
-import '../sb-action-logger.js';
-
-export default {
-  title: 'Helpers/Storybook Action Logger',
-  parameters: {
-    component: 'sb-action-logger',
-    options: { selectedPanel: 'storybookjs/knobs/panel' },
-  },
-};
+import '@lion/helpers/sb-action-logger.js';
 ```
 
 ```js preview-story
 export const main = () => {
   const uid = Math.random().toString(36).substr(2, 10);
   return html`
-    <div>To log: <code>Hello, World!</code></div>
+    <p>To log: <code>Hello, World!</code></p>
     <button
-      @click=${() => {
-        document.getElementById(`logger-${uid}`).log('Hello, World!');
+      @click=${e => {
+        e.target.parentElement.querySelector(`#logger-${uid}`).log('Hello, World!');
       }}
     >
       Click this button
     </button>
-    <div>Or to log: <code>What's up, Planet!</code></div>
+    <p>Or to log: <code>What's up, Planet!</code></p>
     <button
-      @click=${() => {
-        document.getElementById(`logger-${uid}`).log(`What's up, Planet!`);
+      @click=${e => {
+        e.target.parentElement.querySelector(`#logger-${uid}`).log(`What's up, Planet!`);
       }}
     >
       Click this button
@@ -54,7 +43,9 @@ This connects the logger element to the trigger.
 ```html
 <div>To log: <code>Hello, World!</code></div>
 <button
-  @click=${() => document.getElementById('logger-${uid}').log('Hello, World!')}
+  @click=${e => {
+    e.target.parentElement.querySelector('#logger-${uid}').log('Hello, World!')
+  }}
 >Click this button</button>
 <sb-action-logger id="logger-${uid}"></sb-action-logger>
 ```
@@ -77,10 +68,9 @@ you should expect to get only the string interpretation as the output in this lo
 ### Installation
 
 ```bash
-npm i sb-action-logger
-```
+npm i @lion/helpers
 
-## API
+```
 
 ## Variations
 
@@ -95,16 +85,16 @@ export const simpleMode = () => {
   return html`
     <div>To log: <code>Hello, World!</code></div>
     <button
-      @click=${() => {
-        document.getElementById(`logger-${uid}`).log('Hello, World!');
+      @click=${e => {
+        e.target.parentElement.querySelector(`#logger-${uid}`).log('Hello, World!');
       }}
     >
       Click this button
     </button>
     <div>Or to log: <code>What's up, Planet!</code></div>
     <button
-      @click=${() => {
-        document.getElementById(`logger-${uid}`).log(`What's up, Planet!`);
+      @click=${e => {
+        e.target.parentElement.querySelector(`#logger-${uid}`).log(`What's up, Planet!`);
       }}
     >
       Click this button
@@ -126,7 +116,9 @@ You can customize the action logger title with the `.title` property.
 export const customTitle = () => {
   const uid = Math.random().toString(36).substr(2, 10);
   return html`
-    <button @click=${() => document.getElementById(`logger-${uid}`).log('Hello, World!')}>
+    <button
+      @click=${e => e.target.parentElement.querySelector(`#logger-${uid}`).log('Hello, World!')}
+    >
       Log
     </button>
     <sb-action-logger id="logger-${uid}" .title=${'Hello World'}></sb-action-logger>
@@ -172,4 +164,4 @@ Isn't investigated yet on the how, but that is the rough idea.
 New planned features can be found in the test folder where they are specified as skipped tests.
 If the feature you'd like is not in the tests, feel free to make an issue so we can add it.
 
-See our CONTRIBUTING.md for more guidelines on how to contribute.
+See our [CONTRIBUTING.md](https://github.com/ing-bank/lion/blob/master/CONTRIBUTING.md) for more guidelines on how to contribute.

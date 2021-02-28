@@ -24,7 +24,7 @@
     "debug": "cd ../../ && npm run debug -- --group helpers",
     "debug:firefox": "cd ../../ && npm run debug:firefox -- --group helpers",
     "debug:webkit": "cd ../../ && npm run debug:webkit -- --group helpers",
-    "prepublishOnly": "../../scripts/npm-prepublish.js",
+    "prepublishOnly": "node ../../packages-node/publish-docs/src/cli.js --github-url https://github.com/ing-bank/lion/ --git-root-dir ../../",
     "test": "cd ../../ && npm run test:browser -- --group helpers"
   },
   "sideEffects": [
