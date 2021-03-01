@@ -28,6 +28,20 @@ const parser = unified().use(markdown).use(remarkExtend).use(mdStringify);
 const result = await parser.process(sourceMd);
 ````
 
+## Importing everything after primary headline
+
+If you wish to provide your own h1 primary headline (or if for any other reason it's important that this headline stays in the markdown) then you can start import importing with the first content node after it.
+
+We do so by selecting the primary headline and then start with the next sibling node.
+
+````md
+# Inputs >> Input Amount >> Overview || 20
+
+```js ::import('@lion/input-amount/docs/overview.md', 'heading[depth=1] ~ *')
+
+```
+````
+
 ## Importing a block
 
 In many cases, the full file might be too much so you want to import a "block".
