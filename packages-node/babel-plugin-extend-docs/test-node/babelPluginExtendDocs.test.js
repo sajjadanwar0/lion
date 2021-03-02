@@ -1,3 +1,4 @@
+/* eslint-disable no-template-curly-in-string */
 const { expect } = require('chai');
 const { executeBabel, baseConfig } = require('./helpers.js');
 
@@ -202,6 +203,26 @@ describe('babel-plugin-extend-docs', () => {
     const output = [
       'export const main = () => html`',
       `  <wolf-input \${'hi'} label="First Name"></wolf-input>`,
+      '`;',
+    ].join('\n');
+    expect(executeBabel(code, testConfig)).to.equal(output);
+  });
+
+  it("replaces tags also if using ${{key: 'value'}}", () => {
+    const code = [
+      'export const forceLocale = () => html`',
+      '  <lion-input',
+      "    .formatOptions=${{ locale: 'nl-NL' }}",
+      '  ></lion-input>',
+      '`;',
+    ].join('\n');
+    const output = [
+      'export const forceLocale = () => html`',
+      '  <wolf-input',
+      '    .formatOptions=${{',
+      "  locale: 'nl-NL'",
+      '}}',
+      '  ></wolf-input>',
       '`;',
     ].join('\n');
     expect(executeBabel(code, testConfig)).to.equal(output);
