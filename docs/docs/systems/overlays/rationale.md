@@ -1,12 +1,4 @@
-[//]: # 'AUTO INSERT HEADER PREPUBLISH'
-
-# Rationale
-
-```js script
-export default {
-  title: 'Overlays/System/Rationale',
-};
-```
+# Systems >> Overlays >> Rationale || 30
 
 This page describes the goal and duties of the overlay system, mainly by identifying all different
 appearances and types of overlays.

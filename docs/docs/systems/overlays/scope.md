@@ -1,4 +1,4 @@
-# Systems >> Overlays >> System Scope || 50
+# Systems >> Overlays >> Scope || 50
 
 The goal of this document is to specify the goal and duties of the overlay system, mainly by
 identifying all different appearances and types of overlays.

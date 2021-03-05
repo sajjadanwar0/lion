@@ -1,4 +1,4 @@
-# Systems >> Overlays >> System Configuration || 40
+# Systems >> Overlays >> Configuration || 40
 
 ```js script
 import { html } from '@lion/core';
