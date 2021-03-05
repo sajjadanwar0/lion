@@ -6,8 +6,8 @@ import '@lion/input-datepicker/lion-input-datepicker.js';
 import '@lion/listbox/lion-options.js';
 import '@lion/listbox/lion-option.js';
 import '@lion/select-rich/lion-select-rich.js';
-import './src/demo-overlay-system.js';
-import './src/applyDemoOverlayStyles.js';
+import './assets/demo-overlay-system.js';
+import './assets/applyDemoOverlayStyles.js';
 ```
 
 ## Select Rich

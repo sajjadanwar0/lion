@@ -1,3 +1,3 @@
-# Lion Input Features
+# Form System Features
 
-[=> See Source <=](../../../docs/components/inputs/input/features.md)
+[=> See Source <=](../../../docs/docs/systems/form/features.md)

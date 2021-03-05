@@ -1,4 +1,4 @@
-# Systems >> Form >> Features overview || 50
+# Systems >> Form >> Features || 50
 
 This is a meta package to show interaction between various form elements.
 For usage and installation please see the appropriate packages.

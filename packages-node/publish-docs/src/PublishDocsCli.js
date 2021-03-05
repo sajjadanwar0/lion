@@ -23,8 +23,10 @@ export class PublishDocsCli {
       gitHubUrl: options['github-url'],
       gitRootDir: options['git-root-dir'] ? path.resolve(options['git-root-dir']) : process.cwd(),
       copyPattern: options['copy-pattern'],
-      copyTarget: options['copy-target'],
     };
+    if (options['copy-target'] !== undefined) {
+      this.options.copyTarget = options['copy-target'];
+    }
   }
 
   /**

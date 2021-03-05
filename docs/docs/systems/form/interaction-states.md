@@ -5,7 +5,7 @@ import { html, render } from '@lion/core';
 import { renderLitAsNode } from '@lion/helpers';
 import '@lion/input/lion-input.js';
 import { Validator } from '@lion/form-core';
-import './src/helper-wc/h-output.js';
+import './assets/h-output.js';
 ```
 
 `InteractionStateMixin` saves meta information about interaction states.

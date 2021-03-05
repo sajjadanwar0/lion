@@ -4,7 +4,7 @@
 import { html } from '@lion/core';
 import '@lion/input/lion-input.js';
 import { Unparseable } from '@lion/form-core';
-import './src/helper-wc/h-output.js';
+import './assets/h-output.js';
 ```
 
 > For demo purposes, below we use `<lion-input>` which is a basic extension of `<lion-field>`.

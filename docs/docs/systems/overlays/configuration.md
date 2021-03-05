@@ -2,8 +2,8 @@
 
 ```js script
 import { html } from '@lion/core';
-import './src/demo-overlay-system.js';
-import './src/applyDemoOverlayStyles.js';
+import './assetsets/demo-overlay-system.js';
+import './assetsets/applyDemoOverlayStyles.js';
 ```
 
 The `OverlayController` has many configuration options.

@@ -11,10 +11,10 @@ import {
   withModalDialogConfig,
 } from '@lion/overlays/index.js';
 
-import './src/demo-overlay-system.js';
-import './src/demo-overlay-backdrop.js';
-import './src/applyDemoOverlayStyles.js';
-import { ref as r } from './src/ref.js';
+import './assets/demo-overlay-system.js';
+import './assets/demo-overlay-backdrop.js';
+import './assets/applyDemoOverlayStyles.js';
+import { ref as r } from './assets/ref.js';
 ```
 
 The overlay system allows to create different types of overlays like dialogs, toasts, tooltips, dropdown, etc.

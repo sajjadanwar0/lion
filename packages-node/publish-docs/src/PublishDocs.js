@@ -119,7 +119,9 @@ export class PublishDocs {
       !this.options.copyPattern ||
       !this.options.copyTarget
     ) {
-      throw new Error('You need to provide projectDir, gitRootDir, copyPattern & copyTarget');
+      throw new Error(
+        `You need to provide a valid projectDir (given ${this.options.projectDir}), gitRootDir (given ${this.options.gitRootDir}), copyPattern (given ${this.options.copyPattern}) & copyTarget (given ${this.options.copyTarget})`,
+      );
     }
 
     const targetDir = path.join(this.options.projectDir, this.options.copyTarget);
