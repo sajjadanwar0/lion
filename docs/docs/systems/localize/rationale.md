@@ -1,10 +1,4 @@
-# Rationale of the `localize` design
-
-```js script
-export default {
-  title: 'Localize/System/Rationale',
-};
-```
+# Systems >> Localize >> Rationale || 60
 
 ## Requirements
 
@@ -56,9 +50,7 @@ We chose `Intl MessageFormat` as a format for translation parts because:
 
 We decided to have a fallback mechanism in case a dialect (e.g. `nl-NL.js`) is not defined, but generic language (e.g. `nl.js`) is, because we wanted to support legacy applications which used
 
-<a href="https://polymer-library.polymer-project.org/3.0/docs/apps/localize" target="_blank">
-  Polymer's AppLocalizeBehavior
-</a> and could not instantly switch to using full dialects.
+[Polymer's AppLocalizeBehavior](https://polymer-library.polymer-project.org/3.0/docs/apps/localize) and could not instantly switch to using full dialects.
 
 We decided to have a fallback locale (`en-GB` by default):
 

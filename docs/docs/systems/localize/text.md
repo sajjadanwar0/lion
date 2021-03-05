@@ -24,7 +24,7 @@ export const asFunction = () => {
   }
   localize
     .loadNamespace({
-      'lit-html-example': locale => import(`./assets/translations/${locale}.js`),
+      'lit-html-example': locale => import(`./assets/${locale}.js`),
     })
     .then(() => {
       update();
